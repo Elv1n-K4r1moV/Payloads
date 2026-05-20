@@ -208,4 +208,35 @@ X-Forwarded-Server: localhost
 X-Server-Name: 127.0.0.1
 X-Destination-Host: 127.0.0.1
 X-Destination-Host: localhost
+X-Forwarded-For: 127.0.0.1; 8.8.8.8
+X-Forwarded-For: 127.0.0.1|8.8.8.8
+X-Forwarded-For: 127.0.0.1 8.8.8.8
+X-Forwarded-For: 127.0.0.1,,8.8.8.8
+X-Forwarded-For: "127.0.0.1 8.8.8.8"
+X-Forwarded-For: [127.0.0.1,8.8.8.8]
+X-Forwarded-For: "127.0.0.1", 8.8.8.8
+X-Forwarded-For: [127.0.0.1]
+X-Forwarded-For: <127.0.0.1>
+X-Forwarded-For: (127.0.0.1)
+X-Forwarded-For: 127.0.0.1;127.0.0.2
+X-Forwarded-For: 127.0.0.1|8.8.8.8Forwarded-For-IP: 127.0.0.1
+Client-Ip-Addr: 127.0.0.1
+X-Real-ClientIP: 127.0.0.1
+X-Originating-Address: 127.0.0.1
+X-Proxy-IP-Address: 127.0.0.1X-WAP-Client-IP: 127.0.0.1
+X-Sucuri-ClientIP: 127.0.0.1
+X-NF-Client-IP: 127.0.0.1
+X-Cluster-Client-Address: 127.0.0.1
+X-Client-Address: 127.0.0.1
+X-Forwarded-Addr: 127.0.0.1
+X-Remote-Host: 127.0.0.1X-Original-IP: 127.0.0.1
+X-Forwarded-For-Original: 127.0.0.1
+X-Forwarded-Client-IP: 127.0.0.1
+X-Forwarded-User-IP: 127.0.0.1
+X-Real-Client-IP: 127.0.0.1
+X-Client-Real-IP: 127.0.0.1
+True-Client-IP: 127.0.0.1
+CF-True-Client-IP: 127.0.0.1
+Fastly-FF: 127.0.0.1
+X-Proxy-IP: 127.0.0.1
 ```
