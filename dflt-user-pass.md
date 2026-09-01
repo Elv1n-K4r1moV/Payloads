@@ -1,6 +1,8 @@
 ```
 admin : admin
 Admin : admin
+admin : 12345
+Admin : 12345
 12345 : 12345
 Administrator : 7654321
 administrator : 7654321
